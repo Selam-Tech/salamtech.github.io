@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me </a></li>
+                <li><a href="contact.html">Contact Me </a></li>
+                <li><a href="project.html">project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+
+  <section class="projects-container">
+
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3 class="project-name">Snake Game</h3>
+        <p class="project-desc">
+          Classic snake game developed for algorithm coursework,
+          featuring movement logic, collision detection, and scoring.
+        </p>
+        <p class="project-tech">Tools: C++</p>
+        <p class="project-status">Status: Coursework Project</p>
+        <a href="#" class="project-link">GitHub (coming soon)</a>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-name">Traffic Light Simulation</h3>
+        <p class="project-desc">
+          Simulation demonstrating traffic signal logic using timers
+          and conditional flows.
+        </p>
+        <p class="project-tech">Tools: C / C++</p>
+        <p class="project-status">Status: Coursework Project</p>
+        <a href="#" class="project-link">GitHub (coming soon)</a>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-name">Unit Converter App</h3>
+        <p class="project-desc">
+          Desktop application for converting length, temperature,
+          and weight units.
+        </p>
+        <p class="project-tech">Tools: C#, Windows Forms</p>
+        <p class="project-status">Status: Student Project</p>
+        <a href="#" class="project-link">GitHub (coming soon)</a>
+      </div>
+
+      <div class="project-card">
+        <h3 class="project-name">AI Outfit Recommendation</h3>
+        <p class="project-desc">
+          Prototype ML system recommending outfits based on preferences.
+        </p>
+        <p class="project-tech">Tools: Python, Machine Learning</p>
+        <p class="project-status">Status: Prototype</p>
+        <a href="#" class="project-link">GitHub (coming soon)</a>
+      </div>
+
+    </div>
+
+  </section>
+  <footer>
+  <p>© <span id="year"></span> My Digital Space</p>
+</footer>
+
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

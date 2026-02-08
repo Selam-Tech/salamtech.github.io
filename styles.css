@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #717a80;
+    color: rgb(116, 103, 103);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: rgb(194, 183, 183);;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #35424a;
+}
+
+.about-container {
+    display: flex; 
+    align-items: flex-start; 
+    margin: 20px; 
+}
+
+.about-image {
+    max-width: 300px; /* Control the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up the remaining space */
+    padding: 38px;
+}
+
+
+
+#about {
+    display: flex;
+    align-items: center; 
+    margin: 50px; 
+    align-items: flex-start;
+}
+
+.about-content {
+    flex: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and image */
+    
+}
+
+.about-photo {
+    width: 400px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round edges */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh; /* Full height */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place video behind the text */
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    text-align: center;
+    padding: 40px;
+    
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+}
+
+p {
+    font-size: 1.2em; /* Adjust size as needed */
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 30px; /* space between each link */
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+    font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a i {
+  font-size: 24px;
+}
+
+/* Hover colors per platform */
+.social-links a[href*="t.me"]:hover { color: #0088cc; }       /* Telegram blue */
+.social-links a[href*="wa.me"]:hover { color: #25D366; }     /* WhatsApp green */
+.social-links a[href*="linkedin"]:hover { color: #0077b5; }  /* LinkedIn blue */
+.social-links a[href*="github"]:hover { color: #5a5151; }       /* GitHub dark */
+.social-links a[href*="mailto"]:hover { color: #be4617; } 
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.projects-container {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 255, 200, 0.15);
+}
+
+.project-name {
+  font-size: 1.4rem;
+  color: #00ffd5;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-tech,
+.project-status {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #00ffd5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
