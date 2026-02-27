@@ -64,11 +64,10 @@ h1, h2 {
 
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     margin: 40px;
-    flex-wrap: wrap;
 }
 
 .about-image {
@@ -92,11 +91,10 @@ body, html {
 
 .video-background {
     position: relative;
-    height: 100vh; 
-    padding-bottom: 80px;
-
+    min-height: 100vh;  
+    padding: 80px 0;    
+    overflow: hidden;   
 }
-
 .background-video {
     position: absolute;
     top: 50%;
@@ -292,4 +290,5 @@ footer {
     display: block;
     margin: 20px auto;
 }
+
 
