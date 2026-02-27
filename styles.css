@@ -237,38 +237,34 @@ footer {
 
 }
 
+
 @media (max-width: 768px) {
-
-    
     #about {
-        flex-direction: column;   
+        flex-direction: column;
         margin: 20px;
-        align-items: center;
-        text-align: center;
     }
 
-    .about-content {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
- 
+    .about-content,
     .about-photo {
-        width: 90%;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-photo {
         max-width: 300px;
-        height: auto;
+        /* center image */
+        margin-left: auto;
+        margin-right: auto;
     }
 
-  
-    .overlay {
-        width: 90%;
-        padding: 20px;
+
+    .overlay h1 {
+        font-size: 1.8rem;
     }
 
-   
-    body {
-        overflow-x: hidden;
+    .overlay p {
+        font-size: 1rem;
     }
-
 }
+
 
