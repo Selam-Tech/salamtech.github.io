@@ -93,7 +93,8 @@ body, html {
 .video-background {
     position: relative;
     height: 100vh; 
-    overflow: hidden;
+    padding-bottom: 80px;
+
 }
 
 .background-video {
@@ -113,7 +114,7 @@ body, html {
 
 .overlay {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -123,7 +124,6 @@ body, html {
     max-width: 850px;
     z-index: 1;
 }
-
 .overlay h1 {
     font-size: 3rem;
     margin-bottom: 15px;
@@ -284,4 +284,12 @@ footer {
     margin-top: 10px;
 }
 
+.about-photo {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
 
